@@ -4,4 +4,4 @@ My attempt at creating a functioning calculator inspired in both design and func
 
 This project is part of [The Odin Project's Fundamentals curriculum] (https://www.theodinproject.com/courses/foundations/lessons/calculator).
 
-![Calculator](Images/screenGrab)
+![Calculator](Images/screenGrab.png)
