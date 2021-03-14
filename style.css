@@ -1,0 +1,103 @@
+div#container {
+    width: 500px;
+    height: 750px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid;
+    border-radius: 20px;
+    background-color: black;
+    font-family: Arial;
+}
+
+div#screen {
+    width: 90%; 
+    height: 150px;
+    margin: 20px auto 10px auto;
+    border: 1px solid;
+    border-radius: 10px;
+    align-content: center;
+    background-color: black;
+    display: table;
+}
+
+div#buttons {
+    width: 90%; 
+    height: 550px;
+    margin: 20px auto 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+div#numbers {
+    display: table-cell;
+    color: white;
+    text-align: right;
+    vertical-align: bottom;
+    font-size: 60px;
+    padding-right: 30px;
+}
+
+.button {
+    width: 22%; 
+    height: 95px;
+    border: 1px solid;
+    text-align: center;
+    font-size: 30px;
+    line-height: 95px;
+    border-radius: 50px;
+    border: none;
+    transition: all .20s ease;
+}
+
+.long-button {
+    width: 48%; 
+    height: 95px;
+    border: 1px solid;
+    text-align: center;
+    font-size: 30px;;
+    line-height: 95px;
+    border-radius: 50px;
+    border: none;
+}
+
+.orange {
+    background-color: orange;
+    color: white ;
+}
+
+.orange-pressed  {
+    background-color: white;
+    color: orange ;
+}
+
+.lightGray {
+    background-color: rgb(209, 208, 208);
+    color: black ;
+}
+
+.lightGray-pressed {
+    background-color: rgb(241, 240, 240);
+    color: black ;
+}
+
+.gray {
+    background-color: rgb(107, 107, 107);
+    color: white ;
+}
+
+.gray-pressed {
+    background-color: rgb(207, 205, 205);;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+  }
