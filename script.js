@@ -107,6 +107,7 @@ function updateDisplayNumber(e) {
         }
         updateDisplay();
     }
+
     equalLast = false;
 }
 
@@ -141,7 +142,8 @@ buttons.forEach(button => {button.addEventListener('click', function() {
     else if(button.classList.contains('orange')) {
         button.classList.add('orange-pressed');
     }
-})})
+})});
+
 buttons.forEach(button => {button.addEventListener('transitionend', unpress)});
 
 sign.addEventListener('click', function() {
@@ -153,7 +155,7 @@ sign.addEventListener('click', function() {
         displayNumber = '';
     }
     equalLast = false;
-})
+});
 
 document.querySelector(".clear").addEventListener('click', function() {
     display.textContent = 0;
@@ -163,7 +165,7 @@ document.querySelector(".clear").addEventListener('click', function() {
     equalLast = false;
     decimalMode = false;
     decimalHolder = '';
-})
+});
 
 operators.forEach(operator => {operator.addEventListener('click', function() {
     if(operation == '') {
@@ -188,6 +190,7 @@ operators.forEach(operator => {operator.addEventListener('click', function() {
     else {
         operation = this.id;
     }
+
     equalLast = false;
     decimalMode = false;
     decimalHolder = '';
@@ -218,6 +221,7 @@ decimal.addEventListener('click', function() {
         operatorHolder = [];
         decimalHolder += "0";
     }
+    
     if(!decimalMode) {
         decimalMode = true;
         if(decimalHolder == '' || decimalHolder == "0") {
