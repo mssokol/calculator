@@ -15,11 +15,11 @@ const divideTen = document.getElementById("divideTen");
 
 function add(a, b) {
     return a + b;
-};
+}
 
 function subtract(a, b) {
     return a - b;
-};
+}
 
 function divide(a, b) {
     if(b == 0) {
@@ -127,7 +127,7 @@ function unpress(e) {
 window.addEventListener('load', (event) => {
     display.textContent = 0;
     displayNumber = '';
-});
+})
 
 numbers.forEach(number => {number.addEventListener('click', updateDisplayNumber)})
 
@@ -142,7 +142,7 @@ buttons.forEach(button => {button.addEventListener('click', function() {
     else if(button.classList.contains('orange')) {
         button.classList.add('orange-pressed');
     }
-})});
+})})
 
 buttons.forEach(button => {button.addEventListener('transitionend', unpress)});
 
@@ -155,7 +155,7 @@ sign.addEventListener('click', function() {
         displayNumber = '';
     }
     equalLast = false;
-});
+})
 
 document.querySelector(".clear").addEventListener('click', function() {
     display.textContent = 0;
@@ -165,7 +165,7 @@ document.querySelector(".clear").addEventListener('click', function() {
     equalLast = false;
     decimalMode = false;
     decimalHolder = '';
-});
+})
 
 operators.forEach(operator => {operator.addEventListener('click', function() {
     if(operation == '') {
@@ -194,7 +194,7 @@ operators.forEach(operator => {operator.addEventListener('click', function() {
     equalLast = false;
     decimalMode = false;
     decimalHolder = '';
-})});
+})})
 
 document.getElementById("equal").addEventListener('click', function() {
     if(equalLast) {
@@ -214,14 +214,14 @@ document.getElementById("equal").addEventListener('click', function() {
         equalLast = true;
     }
     displayNumber = '';
-});
+})
 
 decimal.addEventListener('click', function() {
     if(equalLast || display.textContent == 0) {
         operatorHolder = [];
         decimalHolder += "0";
     }
-    
+
     if(!decimalMode) {
         decimalMode = true;
         if(decimalHolder == '' || decimalHolder == "0") {
@@ -230,7 +230,7 @@ decimal.addEventListener('click', function() {
     }
     equalLast = false;
     updateDisplayNumber;
-});
+})
 
 divideTen.addEventListener('click', function() {
     operatorHolder = [parseFloat(display.textContent), 10];
@@ -240,5 +240,5 @@ divideTen.addEventListener('click', function() {
     decimalMode = false;    
     decimalHolder = '';
     equalLast = true;
-});
+})
 
